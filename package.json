@@ -3,13 +3,24 @@
   "version": "0.1.0",
   "author": "Qzy<qzy404985074@qq.com>",
   "description": "vue前端框架测试",
-  "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name turboesLib --dest lib packages/index.js"
   },
+  "main": "lib/index.js",
+  "license": "ISC",
+  "keywords": [
+    "eos",
+    "private key",
+    "public key",
+    "sign",
+    "aes",
+    "encryption",
+    "decryption",
+    "hash"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/joooscn/jooos-ui.git"
