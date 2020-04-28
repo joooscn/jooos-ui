@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <chartTest></chartTest>
-    <chartTestuser></chartTestuser>
+    <JUpage :total=100 showTotal :current=2 :pageSize=pageSize></JUpage>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -37,6 +37,10 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },data(){
+    return{
+      pageSize:10
+    }
   }
 }
 </script>

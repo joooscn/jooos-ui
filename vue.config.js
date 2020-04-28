@@ -1,17 +1,20 @@
 const path = require('path');
+const resolve = dir => {
+    return path.join(__dirname, dir)
+}
 module.exports = {
     /* 部署生产环境和开发环境下的URL：可对当前环境进行区分，baseUrl 从 Vue CLI 3.3 起已弃用，要使用publicPath */
     // baseUrl: process.env.NODE_ENV === 'production' ? './' : '/',
     // publicPath: process.env.NODE_ENV === 'production' ? '/public/' : './',
     publicPath: './',
     //更改入口和出口文件名
-    pages: {
-        index: {
-            entry: "examples/main.js",
-            template: "public/index.html",
-            filename: "index.html"
-        },
-    },
+    // pages: {
+    //     index: {
+    //         entry: "examples/main.js",
+    //         template: "public/index.html",
+    //         filename: "index.html"
+    //     },
+    // },
     // 扩展 webpack 配置，使 packages 加入编译
     chainWebpack: config => {
         config.module
