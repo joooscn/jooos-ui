@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: "JUpage",
+  name: "JUI4page",
   props: {
     // 当前页码
     current: {
@@ -118,9 +118,11 @@ export default {
   methods: {
     localStorage(typeName, pageAsPageSize) {
       // 存储页码 每页条数
-      console.log(this)
+      let { sysPrefix } = this.$store.getters;
+      console.log();
+      console.log(this.$route);
       let { name } = this.$route;
-      let appName = `TSF_${typeName}_`;
+      let appName = `${sysPrefix}_${typeName}_`;
       if (name) localStorage.setItem(`${appName + name}`, pageAsPageSize);
     },
     onPage(page) {
@@ -134,9 +136,7 @@ export default {
       this.$emit("on-page", { size });
     }
   },
-  mounted() {
-    console.log(this.$route);
-  },
+  mounted() {},
   watch: {
     page() {
       this.localStorage("page", this.page);

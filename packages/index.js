@@ -1,10 +1,11 @@
 import chartTest from "./chart/index";
 import userTest from "./user/index";
-import JUpage from "./page/index";
+import JUI4page from "./page/index";
+import AceEditor from "./ace-editor/index";
 
 
 // 存储组件列表
-const components = [chartTest, userTest, JUpage];
+const components = [chartTest, userTest, JUI4page,AceEditor];
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function (Vue) {
     // 判断是否安装
