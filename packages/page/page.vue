@@ -1,27 +1,24 @@
 <template>
-  <div>
-    {{ name }}
-    <Page
-      :current="current"
-      :total="total"
-      :pageSize="pageSize"
-      :pageSizeOpts="pageSizeOpts"
-      :placement="placement"
-      :size="size"
-      :simple="simple"
-      :showTotal="showTotal"
-      :showElevator="showElevator"
-      :showSizer="showSizer"
-      :class="className"
-      :styles="styles"
-      :transfer="transfer"
-      :prevText="prevText"
-      :nextText="nextText"
-      :disabled="disabled"
-      @on-change="onPage"
-      @on-page-size-change="onPageSize"
-    />
-  </div>
+  <Page
+    :current="current"
+    :total="total"
+    :pageSize="pageSize"
+    :pageSizeOpts="pageSizeOpts"
+    :placement="placement"
+    :size="size"
+    :simple="simple"
+    :showTotal="showTotal"
+    :showElevator="showElevator"
+    :showSizer="showSizer"
+    :class="className"
+    :styles="styles"
+    :transfer="transfer"
+    :prevText="prevText"
+    :nextText="nextText"
+    :disabled="disabled"
+    @on-change="onPage"
+    @on-page-size-change="onPageSize"
+  />
 </template>
 
 <script>
@@ -119,8 +116,6 @@ export default {
     localStorage(typeName, pageAsPageSize) {
       // 存储页码 每页条数
       let { sysPrefix } = this.$store.getters;
-      console.log();
-      console.log(this.$route);
       let { name } = this.$route;
       let appName = `${sysPrefix}_${typeName}_`;
       if (name) localStorage.setItem(`${appName + name}`, pageAsPageSize);

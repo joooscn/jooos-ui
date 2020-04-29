@@ -28,7 +28,7 @@
 <script>
 import editor from "vue2-ace-editor";
 export default {
-  name: "AceEditor",
+  name: "JUAceEditor",
   components: {
     editor
   },
@@ -140,11 +140,11 @@ export default {
   },
   mounted() {
     // this.editorData = this.value;
-    console.log(this);
+    // console.log(this);
   },
   watch: {
     newData(val) {
-      console.log("newData");
+      // console.log("newData");
       this.$emit("upEditorData", this.name, val);
     },
     editorData() {

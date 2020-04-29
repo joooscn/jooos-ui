@@ -1,10 +1,10 @@
-import AceEditor from './ace-editor'
+import JUAceEditor from './ace-editor'
 
 // 为组件提供 install 安装方法，供按需引入
-AceEditor.install = function (Vue) {
-    Vue.component(AceEditor.name, AceEditor)
+JUAceEditor.install = function (Vue) {
+    Vue.component(JUAceEditor.name, JUAceEditor)
 };
 // 默认导出组件
-export default AceEditor
+export default JUAceEditor
 
 

@@ -1,24 +1,23 @@
-# turboes-lib
+# jooos-ui
 
-## Project setup
+## 安装
 ```
-yarn install
+npm install jooos-ui -S
 ```
+## 说明
+* JUI4组件基于iview4.0
+* JUI3组件基于iview3.0
+* 待完善
 
-### Compiles and hot-reloads for development
+### 1、JUI4page 组件
 ```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+	iview page
+    增加自定义返回,页码和每页条数改变时返回
+    @on-page=""
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 版本记录
+* 2020-04-28
+	- JUI4page公共组件引入
+* 2020-04-27
+	- 测试调试发布npm包
