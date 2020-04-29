@@ -1,6 +1,6 @@
 {
   "name": "jooos-ui",
-  "version": "0.2.1dev",
+  "version": "0.2.0",
   "author": "Qzy<qzy404985074@qq.com>",
   "description": "vue项目公共组件",
   "scripts": {
