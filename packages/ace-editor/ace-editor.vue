@@ -155,7 +155,7 @@ export default {
 </script>
 
 
-<style lang="less">
+<style lang="less" scoped>
 .aceEditor {
   position: relative;
   width: 100%;
