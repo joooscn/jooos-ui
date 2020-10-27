@@ -1,13 +1,12 @@
 <template>
-  <VueQr
-    class="bicode"
-    :text="text"
-    :size="size"
-    :margin="margin"
-    :colorDark="colorDark"
-    :colorLight="colorLight"
-  ></VueQr>
-  <!-- 
+    <VueQr
+      :text="text"
+      :size="size"
+      :margin="margin"
+      :colorDark="colorDark"
+      :colorLight="colorLight"
+    ></VueQr>
+    <!-- 
     :bgSrc="bgSrc"
     :gifBgSrc="gifBgSrc"
     :backgroundColor="backgroundColor"
@@ -25,7 +24,7 @@ import VueQr from "vue-qr";
 export default {
   name: "JUQrCode",
   components: {
-    VueQr,
+    VueQr
   },
   props: {
     // 欲编码的内容
